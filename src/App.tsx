@@ -11,14 +11,14 @@ function App() {
   return (
     <div className="flex flex-col items-center justify-center bg-gradient-to-b from-indigo-500 to-zinc-200 h-screen w-screen relative">
       <Toggle language={language} setLanguage={setLanguage} />
-      <div className="flex flex-col items-center h-[80%] leading-8">
-        <p className="text-[27px] sm:text-[35px] font-Caveat text-[#FBC7CA]">
+      <div className="flex flex-col items-center h-[80%] leading-8 px-6">
+        <p className="text-[27px] text-center sm:text-[35px] font-Caveat text-[#FBC7CA]">
           {texts[language].title}
         </p>
-        <p className="text-[23px] sm:text-[28px] font-Caveat text-[#FBC7CA]">
+        <p className="text-[23px] sm:text-[28px] text-center font-Caveat text-[#FBC7CA]">
           {texts[language].subTitle}
         </p>
-        <p className="text-[23px] sm:text-[28px] font-Caveat text-[#FBC7CA]">
+        <p className="text-[23px] sm:text-[28px] text-center  font-Caveat text-[#FBC7CA]">
           {texts[language].description}
         </p>
         <img
