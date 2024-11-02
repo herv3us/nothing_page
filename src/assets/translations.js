@@ -1,12 +1,12 @@
 export const texts = {
   en: {
-    title: 'Hello world!',
-    subTitle: 'There is nothing to see here.',
-    description: 'This page is empty at the moment.',
+    title: 'Hello there!',
+    subTitle: 'There is nothing to see at Papperskrig.se at the moment.',
+    description: 'But you are welcome to come back at a later time.',
   },
   sv: {
-    title: 'Hej världen!',
-    subTitle: 'Det finns inget att se här.',
-    description: 'Denna sidan är tom för tillfället.',
+    title: 'Hejsan!',
+    subTitle: 'Det finns inget att se på Papperskrig.se just nu.',
+    description: 'Men du är välkommen tillbaka vid ett senare tillfälle.',
   },
 };

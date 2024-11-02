@@ -9,12 +9,24 @@ function App() {
 
   console.log(language, texts[language].title);
   return (
-    <div className="p-0 m-0 flex flex-col items-center justify-center bg-gradient-to-b from-indigo-500 to-zinc-200 h-screen w-screen relative">
+    <div className="flex flex-col items-center justify-center bg-gradient-to-b from-indigo-500 to-zinc-200 h-screen w-screen relative">
       <Toggle language={language} setLanguage={setLanguage} />
-      <p className="text-lg">{texts[language].title}</p>
-      <p className="text-lg">{texts[language].subTitle}</p>
-      <img src={image} alt="gamer43" className="w-[400px] sm:w-[850px]" />
-      <p className="text-lg">{texts[language].description}</p>
+      <div className="flex flex-col items-center h-[80%] leading-8">
+        <p className="text-[27px] sm:text-[35px] font-Caveat text-[#FBC7CA]">
+          {texts[language].title}
+        </p>
+        <p className="text-[23px] sm:text-[28px] font-Caveat text-[#FBC7CA]">
+          {texts[language].subTitle}
+        </p>
+        <p className="text-[23px] sm:text-[28px] font-Caveat text-[#FBC7CA]">
+          {texts[language].description}
+        </p>
+        <img
+          src={image}
+          alt="gamer43"
+          className="-mt-8 sm:-mt-12 w-[400px] sm:w-[650px]"
+        />
+      </div>
     </div>
   );
 }
